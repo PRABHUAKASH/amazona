@@ -34,13 +34,7 @@ function reducer(state, action) {
       localStorage.setItem('cartItems', JSON.stringify(cartItems));
       return { ...state, cart: { ...state.cart, cartItems } };
     }
-    // return {
-    //   ...state,
-    //   cart: {
-    //     ...state.cart,
-    //     cartItems: [...state.cart.cartItems, action.payload],
-    //   },
-    // };
+
     default:
       return state;
   }
